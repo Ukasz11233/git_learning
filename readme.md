@@ -1,12 +1,12 @@
 ### Lokalne repozytorium:
 
-- katalog roboczy (working directory)  
+- __katalog roboczy__ (working directory)  
   |  git add .  
   V  
-- przechowalnia (staging area)  
+- __przechowalnia \ kolejka oczekiwania__ (staging area)  
   |  git commit  
   V
-- repozytorium (.git folder)   
+- __repozytorium__ (.git folder)   
 
 ### Trzy stany plików:  
 - zmodyfikowane (modified)  
@@ -31,15 +31,25 @@ Aby rozwiązać ten problem wystarczy zrobić __git add file__ lub __git commit_
 
 
 ##Commands:
-- git init ---> inicjalizuje puste repozytorium lokalne
-- git status ---> sprawdza status plikow w repozytorium lokalnym
-- git add .  ---> dodaje wybrane pliki do przechowalni 
-- git commit -m "tresc_komentarza" ---> dodaje pliki z przechowalni do repozytorium
+- __git init__ ---> inicjalizuje puste repozytorium lokalne
+- __git status__ ---> sprawdza status plikow w repozytorium lokalnym
+
+###
+- __git add .__  ---> dodaje wybrane pliki do przechowalni 
+- __git reset__---> usuwa pliki z przechowalni (odwrotność __git add__) 
+###
+- __git commit -m "tresc_komentarza"__ ---> dodaje pliki z przechowalni do repozytorium
 wraz z treścią komentarza
-- git clean ---> usuwa nieśledzone pliki i katalogi:  
--n --> wyświetla pliki które będą nieśledzone (tryb testowy polecenia git clean)
--d --> wyświetla katalogi
+- __git checkout -- file_name__ ---> przywraca plik z katalogu roboczego do stanu aktualnego w 
+repozytorium
+- __git rm\mv file_name__ ---> usuwa\przenosi z repozytorium plik file_name. Następnie informacja o tym 
+zostaje dodane do przechowalni
+
+###
+- __git clean__ ---> usuwa nieśledzone pliki i katalogi @__!!! nie moze sotac odwrocone!!!__@:  
+-n --> wyświetla pliki które będą nieśledzone (tryb testowy polecenia git clean)  
+-d --> wyświetla katalogi  
 -i --> tryb interaktywny
-- git reset ---> usuwa pliki z przechowalni (odwrotność __git add__)   
+
 ##Pliki:
 .gitignore ---> zapisane w nim pliki sa ignorowane przez system kontroli wersji
