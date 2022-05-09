@@ -36,7 +36,7 @@ Aby rozwiązać ten problem wystarczy zrobić __git add file__ lub __git commit_
 
 ###
 - __git add .__  ---> dodaje wybrane pliki do przechowalni 
-- __git reset__---> usuwa pliki z przechowalni (odwrotność __git add__) 
+- __git reset__ == __git restore --staged__  ---> usuwa pliki z przechowalni (odwrotność __git add__) 
 ###
 - __git commit -m "tresc_komentarza"__ ---> dodaje pliki z przechowalni do repozytorium
 wraz z treścią komentarza
