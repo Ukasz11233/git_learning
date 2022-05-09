@@ -12,8 +12,8 @@
 - zmodyfikowane (modified)  
   |  git add  
   V         
-- śledzone (tracked)
-  |  git commit
+- śledzone (tracked)  
+  |  git commit  
   V 
 - zatwierdzone (commited)
 
@@ -28,7 +28,7 @@ Do sytacji dochodzi gdy zrobimy:
 - git status pokazuje nam, że plik znajduje się w dwóch miejscach
 
 Aby rozwiązać ten problem wystarczy zrobić __git add file__ lub __git commit__,
-
+ 
 
 ##Commands:
 - __git init__ ---> inicjalizuje puste repozytorium lokalne
@@ -40,7 +40,7 @@ Aby rozwiązać ten problem wystarczy zrobić __git add file__ lub __git commit_
 ###
 - __git commit -m "tresc_komentarza"__ ---> dodaje pliki z przechowalni do repozytorium
 wraz z treścią komentarza
-- __git checkout -- file_name__ ---> przywraca plik z katalogu roboczego do stanu aktualnego w 
+- __git checkout -- file_name__ == __git restore__ ---> przywraca plik z katalogu roboczego do stanu aktualnego w 
 repozytorium
 - __git rm\mv file_name__ ---> usuwa\przenosi z repozytorium plik file_name. Następnie informacja o tym 
 zostaje dodane do przechowalni
