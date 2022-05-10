@@ -76,9 +76,14 @@ __--patch__ -- file_name__ --> wyświetla zmiany jakie zaszły w danym pliku
 -i --> tryb interaktywny
   
 ### Stash:
-- __git stash__: --> dodaje nie
-
-
+- __git stash__: --> dodaje zmiany które nie zostały commitowane na stos
+__stash push -m "message"__  --> dodaje na stos wraz z komentarzem  
+__stash list__ --> wyświetla zawartość stosu
+__stash pop__  --> zabiera pierwszy element ze stosu i dodaje do katalogu roboczego
+__stash apply stash@{1}__ --> dodaje do katalogu robczego elementy na stosie z indeksu 1
+  i zostawia je na stosie.
+__stash drop stash@{2}__  --> usuwa drugi element ze stosu
+__stash clear__  --> czyści cały stos 
 ##Pliki:
 .gitignore ---> zapisane w nim pliki sa ignorowane przez system kontroli wersji
 
