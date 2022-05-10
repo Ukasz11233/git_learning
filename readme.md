@@ -74,6 +74,10 @@ __--patch__ -- file_name__ --> wyświetla zmiany jakie zaszły w danym pliku
 -n --> wyświetla pliki które będą nieśledzone (tryb testowy polecenia git clean)  
 -d --> wyświetla katalogi  
 -i --> tryb interaktywny
+  
+### Stash:
+- __git stash__: --> dodaje nie
+
 
 ##Pliki:
 .gitignore ---> zapisane w nim pliki sa ignorowane przez system kontroli wersji
