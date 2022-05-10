@@ -62,8 +62,5 @@ zostaje dodane do przechowalni
 -d --> wyświetla katalogi  
 -i --> tryb interaktywny
 
-### 
-- __git log__ ---> wyświetla historię commitów:  
---oneline --> wyświetla w skondensowanej wersji
 ##Pliki:
 .gitignore ---> zapisane w nim pliki sa ignorowane przez system kontroli wersji
