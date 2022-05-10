@@ -36,12 +36,28 @@ Aby rozwiązać ten problem wystarczy zrobić __git add file__ lub __git commit_
 
 ###
 - __git add .__  ---> dodaje wybrane pliki do przechowalni 
-- __git reset__ == __git restore --staged__  ---> usuwa pliki z przechowalni (odwrotność __git add__) 
 ###
 - __git commit -m "tresc_komentarza"__ ---> dodaje pliki z przechowalni do repozytorium
 wraz z treścią komentarza
-- __git checkout -- file_name__ == __git restore__ ---> przywraca plik z katalogu roboczego do stanu aktualnego w 
-repozytorium
+
+### Przywracanie zmian:  
+- __git checkout:  
+-- file_name__ == __git restore__ --> przywraca plik z katalogu roboczego do stanu aktualnego w  
+__commit hash__  --> przestawia wskaźnik katalogu roboczego HEAD na _commit hash_, czyli w katalogu roboczym wyświetlane 
+  są pliki które były podczas danego commitu.  
+__commit hash__ __file_name__ --> przywraca dany plik _file_name_ do aktualnego katalogu roboczego.
+repozytorium  
+- __git revert__:
+__commit has__ --> odwraca zmiany w wybranym commicie i zapisuje je jako nowy commit.
+  Za jego pomocą można odwracać zmiany w repo publicznym, ponieważ nie modyfikuje historii commitów.
+- __git reset__:  
+== __git restore --staged__  ---> usuwa pliki z przechowalni (odwrotność __git add__) 
+__--mixded hash_commit__ --> wszystkie nowsze commity zostaną usunięte, a zmiany wprowadzone podczas
+  tych commitów zostaną odzwierciedlone w naszym katalogu roboczym
+__--soft hash_commit__ --> tak jak wyżej, tylkko, że zmiany zostaną dodane do poczekalni.
+__--hard hash_commit__ --> wszystkie commity i zmiany zostaną bezpowrotnie usunięte.  
+    
+
 - __git rm\mv file_name__ ---> usuwa\przenosi z repozytorium plik file_name. Następnie informacja o tym 
 zostaje dodane do przechowalni
 
