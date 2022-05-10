@@ -69,6 +69,7 @@ zostaje dodane do przechowalni
 __--oneline__ --> wyświetla historię w skondensowanej formie  
 __--author="Ukasz11233"__ --> wyświetla commity danego użytkownika  
 __--patch__ -- file_name__ --> wyświetla zmiany jakie zaszły w danym pliku  
+__--graph --decorate --all --oneline__ --> wyświetla wszystkie commity jako graf
 ###
 - __git clean__ ---> usuwa nieśledzone pliki i katalogi @__!!! nie moze sotac odwrocone!!!__@:  
 -n --> wyświetla pliki które będą nieśledzone (tryb testowy polecenia git clean)  
