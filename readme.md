@@ -50,11 +50,11 @@ repozytorium
 - __git revert__:
 __commit has__ --> odwraca zmiany w wybranym commicie i zapisuje je jako nowy commit.
   Za jego pomocą można odwracać zmiany w repo publicznym, ponieważ nie modyfikuje historii commitów.
-- __git reset__:  
-== __git restore --staged__  ---> usuwa pliki z przechowalni (odwrotność __git add__) 
+- __git reset__:    
+== __git restore --staged__  ---> usuwa pliki z przechowalni (odwrotność __git add__)  
 __--mixded hash_commit__ --> wszystkie nowsze commity zostaną usunięte, a zmiany wprowadzone podczas
-  tych commitów zostaną odzwierciedlone w naszym katalogu roboczym
-__--soft hash_commit__ --> tak jak wyżej, tylkko, że zmiany zostaną dodane do poczekalni.
+  tych commitów zostaną odzwierciedlone w naszym katalogu roboczym  
+__--soft hash_commit__ --> tak jak wyżej, tylkko, że zmiany zostaną dodane do poczekalni.  
 __--hard hash_commit__ --> wszystkie commity i zmiany zostaną bezpowrotnie usunięte.  
     
 
