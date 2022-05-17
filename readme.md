@@ -98,3 +98,31 @@ __stash clear__  --> czyści cały stos
 - Używanie trybu rozkazującego w treści tytułu komentarza
 - Ogranicz dłguość wiersza do 72 znaków (chodzi o to, żeby edytor nie łamał wierszy)
 - Pisząc treść komentarza odpowiadaj na pytania co i dlaczego 
+
+
+# Branch
+
+### Master branch:
+- glowna galaz projektu wykorzystywana do publikacji najnowszej wersji projektu na serwerze produkcyjnym.
+Master powinien zawsze zawierac stablina wersje produktu.
+  
+### Dev branch:
+- galaz na ktorej znajduje sie wersja testowa projektu. Zwykle polaczona z serwerem testowym.
+
+
+### Feature branch:
+- galaz na ktorej prowadzone sa prace na nowymi funkcjami. Po ukonczeniu prac, trafiaja na branch dev.
+
+### User branch:
+- galezie uzytkownikow indywidualnej pracy czlonka zespolu nad zmianami. Ukonczone zmiany trafiaja na galaz feature.
+
+### Test/Bugfix branch:
+- w szczegolnych przypadkach, konieczne jest szybkie wprowadzenie zmian. W tej sytuacji wykorzystywane sa galezie
+typu bugfix. Przygotowywane tutaj zmiany, najczesciej trafiaja na galaz dev.
+  
+## Polecenia:
+- __git branch__ --> wyswietla wszystkie widoczne branch'e na lokalnym repo.  
+__--delete branch_name__ -> usuwa galaz
+- __git merge branch_name__ -> laczy ze soba dwie galezie (jesli nie ma konfliktow, dodaje nowy commit)
+jesli natomiast sa, musimy je rozwiazac i zrobic commit.
+- __git checkout branch_name__ ---> zmienia galaz na branch_name
